@@ -41,7 +41,7 @@ class Header extends Component {
             <Modal show={this.state.show} className="warp-modal " size="">
               <Modal.Header ><h1  className="header-modal">LOGIN</h1></Modal.Header>
 
-              {/* ================= body modal===================== */}
+               {/*-----------------------------------  modal----------------------------------------*/}
               <Modal.Body>
                 <Form>
                   <Form.Group controlId="formBasicEmail">
