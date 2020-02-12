@@ -69,6 +69,7 @@ class main extends Component {
                 "overflow-y": "auto"
               }}
             >
+             { /*---------------------------------------form input------------------------------------------------*/}
               <Form className="form-container">
                 <Form.Group controlId="formGridAddress1">
                   <Form.Label>Breeder</Form.Label>
@@ -132,6 +133,7 @@ class main extends Component {
                   Register
                 </Button>
               </Form>
+              { /*---------------------------------------form input------------------------------------------------*/}
             </Modal.Body>
             {/* ================body modal====================== */}
             <Modal.Footer>
