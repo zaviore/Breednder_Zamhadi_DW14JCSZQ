@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-import { Button, Modal } from "react-bootstrap";
+import { Button, Modal, Navbar, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "react-bootstrap/Navbar";
-import Form from "react-bootstrap/Form";
-
+import { Link } from "react-router-dom";
 import "../App.css";
-//Landing
+
 class Header extends Component {
   constructor() {
     super();
@@ -24,8 +22,8 @@ class Header extends Component {
   render() {
     return (
       <Navbar>
-        <Navbar.Brand href="/" className="home">
-          <h4>Breednder</h4>
+        <Navbar.Brand href="/" >
+          <h4 className="home"  >Breednder</h4>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
@@ -38,10 +36,10 @@ class Header extends Component {
             >
               LOGIN
             </Button>{" "}
-            <Modal show={this.state.show} className="warp-modal " size="">
+            <Modal show={this.state.show} className="warp-modal " >
               <Modal.Header ><h1  className="header-modal">LOGIN</h1></Modal.Header>
 
-               {/*-----------------------------------  modal----------------------------------------*/}
+              {/* ================= body modal===================== */}
               <Modal.Body>
                 <Form>
                   <Form.Group controlId="formBasicEmail">
@@ -59,9 +57,13 @@ class Header extends Component {
                   <Form.Group controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
                   </Form.Group>
+
+                <Link to="/Home">
                   <Button variant="success" type="submit" block>
                     LOGIN
                   </Button>
+                </Link>
+                
                 </Form>
               </Modal.Body>
               {/* ================body modal====================== */}

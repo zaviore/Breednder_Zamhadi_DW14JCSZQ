@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-
-import { Button, Modal, Col, Row } from "react-bootstrap";
-import ModalDialog from "react-bootstrap/ModalDialog";
+import { Button, Modal, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import "../App.css";
+
+  
+
+
+
 
 class main extends Component {
   constructor() {
@@ -18,6 +20,7 @@ class main extends Component {
   handlemodal() {
     this.setState({ show: !this.state.show });
   }
+
 
   render() {
     return (

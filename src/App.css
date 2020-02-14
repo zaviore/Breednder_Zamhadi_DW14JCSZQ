@@ -12,7 +12,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-body {
+.imglanding {
   /* The image used */
   background-image: url("owl.png");
  background-position: center;
@@ -22,7 +22,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-h4 {
+.breeder {
   color: aliceblue;
 }
 
@@ -57,15 +57,34 @@ h4 {
 .App-link {
   color: #61dafb;
 }
+.home{
+  color: white;
+}
 
 .warp-modal {
-  width: 200px;
+
   margin: auto;
   margin-top: 100px;
+  max-height: 100vh;
+  
+  overflow-y: auto;
+}
+
+
+.warp-modal-pet {
+
+  margin: auto;
+  margin-left: 230px;
   max-height: 100vh;
   overflow-y: auto;
 }
 
+
+.warp-modal-pet h2 {
+font-weight: bold;
+padding: 10px;
+
+}
 .modal-title{
   height: -100px;
 }
