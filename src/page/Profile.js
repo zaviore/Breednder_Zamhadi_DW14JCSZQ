@@ -21,7 +21,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../Application.css";
 import Match from "./Match";
 import DataProfile from "./DataProfile";
-
+// -------------------------------------- profile utama ----------------------------------------
 class Home extends Component {
   render() {
     return (
