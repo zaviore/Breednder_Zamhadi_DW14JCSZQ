@@ -23,13 +23,13 @@ class Addpet extends Component {
   render() {
     return (
 <div>
-<Button variant="success" block onClick={() => {
+<Button className="button-addpet" variant="success" block onClick={() => {
                 this.handlemodal();
               }}>
                       Add Pet
 </Button>
 
-<Modal show={this.state.show} className="warp-modal-pet " >
+<Modal show={this.state.show} className="warp-modal-pet" >
               <Modal.Header ><h2  className="header-modal">Premium</h2></Modal.Header>
 
               <Modal.Body >
@@ -46,7 +46,7 @@ class Addpet extends Component {
                   <Form.Group >
                   <Form.Control type="email" placeholder="No.Rek Kamu" column sm="2"/>
                  
-                    <img src={ImportPhoto} style={{"opacity":"0.5"}}></img>
+                    <img type="file" src={ImportPhoto} style={{"opacity":"0.5"}}></img>
                   </Form.Group>
 
                 
@@ -57,10 +57,11 @@ class Addpet extends Component {
               </Modal.Body>
              
               <Modal.Footer>
-              
-              <Button variant="success"  block  >
+              <Link to="/Premium">
+              <Button variant="success"  className="btn-block"  >
                   Submit
                 </Button>
+                </Link>
                 
 
                 <Button variant="outline-success"  block 

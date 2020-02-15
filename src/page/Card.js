@@ -27,7 +27,7 @@ class Card extends React.Component {
           <div className="card">
             <Carousel>
               {pics.map((pic, index) => (
-                <img src={pic} key={index} alt="profilePicture" />
+                <img src={require(`../image/${pic}`)} key={index} alt="profilePicture" />
               ))}
             </Carousel>
             <h2>{name},</h2>

@@ -33,7 +33,7 @@ class Home extends Component {
                 <Image src={back}></Image>
               </Link>
               <Image src={pic} roundedCircle className="pp" />
-              &nbsp; &nbsp;<h3>Owl-chan</h3>
+              &nbsp; &nbsp;<h3>Data Profile</h3>
             </Row>
 
             <Row className="card-list" >

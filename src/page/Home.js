@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-
+import forground from "../image/forground.png";
 import pic from "../image/profile.jpg";
 import love from "../image/love.png";
 import star from "../image/star.png";
@@ -24,7 +24,8 @@ class Home extends Component {
               <Link to="/Profile">
                 <Image src={pic} roundedCircle className="pp" />
               </Link>
-              &nbsp; &nbsp;<h3>Owl-chan</h3>
+              &nbsp; &nbsp;<h3>Ricardo Milos</h3>
+              <hr style={{" border-top": "5px solid red"}}/>
             </Row>
             <Row className="match-list">
               <Col>
@@ -37,7 +38,7 @@ class Home extends Component {
             <Row className="card-list">
               <Container
                 style={{
-                  "max-height": "calc(100vh - 210px)",
+                  "max-height": "calc(90vh - 100px)",
                   "overflow-y": "auto"
                 }}
               >
@@ -49,17 +50,18 @@ class Home extends Component {
             <Col sm={8} className="body-kanan" style={{
                     "max-height": "calc(220vh - 220px)",
                     "overflow-y": "auto",
-                    "overflow-x":"hidden",
+                    "overflow":"hidden",
                   }}>
               <div id="swipe" >
                   
                 <Deck />
              <div className="button-tinder" >
           
-               <Image src={love}></Image>
+             <Image src={other}></Image>
                <Image src={not}></Image>
+               <Image src={love}></Image>
                <Image src={star}></Image>
-               <Image src={other}></Image>
+               
            
              </div>
              

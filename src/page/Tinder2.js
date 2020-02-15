@@ -1,7 +1,7 @@
 export default [
   {
     pics: [
-      "https://images.unsplash.com/photo-1520024146169-3240400354ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      "http://4.bp.blogspot.com/-QfTRLgNoA6g/TZtBtbNeIrI/AAAAAAAAAms/Ly9OrmZ5wcM/s1600/Burung+Hantu.jpg"
     ],
     name: "Heather",
     age: 32,
@@ -11,7 +11,7 @@ export default [
   },
   {
     pics: [
-      "https://images.unsplash.com/photo-1522263842439-347f062b8475?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+      "http://2.bp.blogspot.com/-wnwLXUhprVI/TZtCnLk0TpI/AAAAAAAAAm0/HUzcE0-4jW4/s1600/Burung+Hantu.jpg"
     ],
     name: "Chloe",
     age: 18,
@@ -20,7 +20,7 @@ export default [
   },
   {
     pics: [
-      "https://images.unsplash.com/photo-1539758462369-43adaa19bc1f?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+      "http://4.bp.blogspot.com/-k5LiFLBXUFk/TZtC9iZjtFI/AAAAAAAAAm4/daI3tCYPskc/s1600/Burung+Hantu.jpg"
     ],
     name: "Helen",
     age: 19,
@@ -29,7 +29,7 @@ export default [
   },
   {
     pics: [
-      "https://images.unsplash.com/photo-1514924801778-1db0aba75e9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+      "https://kacer.co.id/wp-content/uploads/2019/12/burung-hantu-Beluk-Ketupa.jpg"
     ],
     name: "Savannah",
     age: 29,
@@ -38,12 +38,12 @@ export default [
   },
   {
     pics: [
-      "https://img.jakpost.net/c/2017/12/06/2017_12_06_36904_1512546861._large.jpg"
+      "https://kacer.co.id/wp-content/uploads/2019/12/burung-hantu-Snowy-Owl.jpg"
     ],
-    name: "Koala kun",
+    name: "Miraii",
     age: 2 , 
     text:
     
-      "She like koala too."
+      "She like eating, and playing duck doll"
   }
 ];

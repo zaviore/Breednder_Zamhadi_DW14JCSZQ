@@ -14,12 +14,13 @@ class DataProfile extends Component {
   <div id="utama-profil" >
       <Container >
 <ListGroup className="List-g" >
-
+<ListGroup.Item>
 <h2>Account Settings</h2>
+</ListGroup.Item>
   
   <ListGroup.Item>Email : Zamhadi21@gmail.com</ListGroup.Item>
   <ListGroup.Item>Phone : 081277060233</ListGroup.Item>
-  <h2>Discovery Settings</h2>
+  <ListGroup.Item><h2>Discovery Settings</h2></ListGroup.Item>
   <ListGroup.Item>
 <div className="Discovery">
   <Row>
@@ -56,9 +57,11 @@ class DataProfile extends Component {
     <Col>
     <Container className="option-control">
     <Form.Control as="select" value="Owl" >
-    <option>Cat</option>
-        <option>Wolf</option>
-        <option>Owl</option>
+    <option>Owl regular</option>
+        <option>Owl eostrix </option>
+        <option>Ptilopsis leucotis</option>
+        <option> Ptilopsis granti</option>
+       
       </Form.Control>
       </Container>
         

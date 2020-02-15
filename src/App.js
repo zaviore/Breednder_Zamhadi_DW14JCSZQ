@@ -15,6 +15,7 @@ import {
 import Edit from "./page/Edit"
 import Home from "./page/Home";
 import Profile from "./page/Profile";
+import Premium from "./page/Premium";
  
 
 class App extends Component {
@@ -26,6 +27,11 @@ class App extends Component {
       <Switch>
       <Route exact path="/Home">
         <Home />
+      </Route>
+
+      
+      <Route exact path="/Premium">
+        <Premium />
       </Route>
 
       <Route exact path="/Edit">

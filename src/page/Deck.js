@@ -3,13 +3,13 @@ import { useSprings } from "react-spring/hooks";
 import { useGesture } from "react-with-gesture";
 
 import Card from "./Card";
-import data from "./Tinder2";
+import data from "./data.json";
 
 import "../Deck.css";
 
 const to = i => ({
   x: 0,
-  y: i * -10,
+  y: i * 0,
   scale: 1,
   rot: -10 + Math.random() * 20,
   delay: i * 100
