@@ -1,7 +1,6 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -114,8 +113,8 @@ padding: 10px;
 
 #rounded-button{
 border: none;
-border-radius: 20px;
-width:300px;
+border-radius: 10px;
+width:200px;
 }
 @keyframes App-logo-spin {
   from {

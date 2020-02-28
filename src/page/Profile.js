@@ -7,19 +7,10 @@ import { FaRegUser } from "react-icons/fa";
 import { FaTransgender } from "react-icons/fa";
 import { MdPhoneAndroid } from "react-icons/md";
 
-import {
-  Button,
-  ListGroup,
-  ListGroupItem,
-  Card,
-  Col,
-  Row,
-  Container,
-  Image
-} from "react-bootstrap";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Button, Card, Col, Row, Container, Image } from "react-bootstrap";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import "../Application.css";
-import Match from "./Match";
+
 import DataProfile from "./DataProfile";
 // -------------------------------------- profile utama ----------------------------------------
 class Home extends Component {
@@ -36,16 +27,15 @@ class Home extends Component {
               &nbsp; &nbsp;<h3>Data Profile</h3>
             </Row>
 
-            <Row className="card-list" >
+            <Row className="card-list">
               <Container>
                 <DataProfile />
               </Container>
             </Row>
           </Col>
-        
+
           <div>
             <Col sm={5} className="body-kanan">
-              
               <div className="swipe">
                 <Card
                   className="card-profile"
@@ -55,10 +45,15 @@ class Home extends Component {
                   }}
                 >
                   <div className="pp2">
+                    <div className="pp-header">
+                      <h2>Profile</h2>
+                      <hr></hr>
+                    </div>
+
                     <Card.Img variant="top" src={pic} />
                   </div>
                   <Card.Body>
-                    <Card.Title>
+                    <Card.Title className="titles">
                       <h3>Owl</h3>
                     </Card.Title>
                     <Card.Text>
@@ -79,7 +74,7 @@ class Home extends Component {
                         <MdPhoneAndroid /> Phone Breeder : 08999823823332
                       </Container>
 
-                      <Card.Title>
+                      <Card.Title className="titles">
                         <h3>About</h3>
                       </Card.Title>
                       <Container className="text">
@@ -90,22 +85,21 @@ class Home extends Component {
                         askadkobf;jioadja a kpojhflk a kj;jlj;adadjl;adjlad[kfa
                       </Container>
                     </Card.Text>
+                    <hr></hr>
                     <Link to="/Edit">
-                    <Button variant="success" block>
-                      Edit
-                    </Button>
+                      <Button variant="success" block>
+                        Edit
+                      </Button>
                     </Link>
+                    <hr></hr>
                   </Card.Body>
                 </Card>
                 <Col xs={{ order: 12 }} sm={2} className="bodybiasa">
-          <Addpet/>
-          </Col>
+                  <Addpet />
+                </Col>
               </div>
-
             </Col>
           </div>
-
-          
         </Row>
       </Container>
     );

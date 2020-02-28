@@ -27,13 +27,17 @@ class Card extends React.Component {
           <div className="card">
             <Carousel>
               {pics.map((pic, index) => (
-                <img src={require(`../image/${pic}`)} key={index} alt="profilePicture" />
+                <img
+                  src={require(`../image/${pic}`)}
+                  key={index}
+                  alt="profilePicture"
+                />
               ))}
             </Carousel>
-            <h2>{name},</h2>
-            <h2>{age}</h2>
-
-            <h5>{text}</h5>
+            <h5>{name},</h5>
+            <br></br>
+            <h5 style={{ padding: 5 }}> Age : {age}</h5>
+            <h5 style={{ padding: 5 }}>{text}</h5>
           </div>
         </animated.div>
       </animated.div>

@@ -1,70 +1,52 @@
- [
+[
   {
-    "pics": [
-      "owl1.jpg"
-    ],
+    "pics": ["owl1.jpg"],
     "name": "Heather",
     "age": 32,
     "distance": "4 miles away",
-    "text":
-      "My nickname is Gilette because I'm the best a man can get. Also I will cut you."
+    "text": "cute af."
   },
   {
-    "pics": [
-      "owl3.jpg"
-    ],
+    "pics": ["owl3.jpg"],
     "name": "Chloe",
     "age": 18,
     "distance": "1 mile away",
-    "text": "The C and the L are silent."
+    "text": "she want get a friend."
   },
 
-  
   {
-    "pics": [
-      "owl8.jpg"
-    ],
+    "pics": ["owl8.jpg"],
     "name": "Chloe",
     "age": 18,
     "distance": "1 mile away",
-    "text": "The C and the L are silent."
+    "text": "She very silent owl and do cute things."
   },
   {
-    "pics": [
-      "owl4.jpg"
-    ],
+    "pics": ["owl4.jpg"],
     "name": "Helen",
     "age": 19,
     "distance": "3 miles away",
-    "text": "Aspiring MILF"
+    "text": "active owl, swipee right for her!!"
   },
   {
-    "pics": [
-      "owl5.jpg"
-    ],
+    "pics": ["owl5.jpg"],
     "name": "Savannah",
     "age": 29,
     "distance": "3 miles away",
-    "text": "A little known fact is that I cover about 40% of Africa."
+    "text": " please right she a lonely owl !!"
   },
   {
-    "pics": [
-      "owl9.jpg"
-    ],
+    "pics": ["owl9.jpg"],
     "name": "Chloe",
     "age": 18,
     "distance": "1 mile away",
-    "text": "The C and the L are silent."
+    "text": " likey likey likey "
   },
   {
-    "pics": [
-      "owl6.jpg"
-    ],
+    "pics": ["owl6.jpg"],
     "name": "Miraii",
-    "age": 2 , 
+    "age": 2,
     "distance": "3 miles away",
-    "text":
-    
-      "She like eating, and playing duck doll"
+    "text": "She like eating, and playing with duck doll"
   }
 ]

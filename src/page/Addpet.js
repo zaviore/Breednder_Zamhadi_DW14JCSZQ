@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Modal , Form } from "react-bootstrap";
+import { Button, Modal, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ImportPhoto from "../image/import.png";
 import { Link } from "react-router-dom";
@@ -15,68 +15,77 @@ class Addpet extends Component {
 
   handlemodal() {
     this.setState({ show: !this.state.show });
-   
   }
-  
+
   // ----------------------------------------add pet -------------------------------------
 
   render() {
     return (
-<div>
-<Button className="button-addpet" variant="success" block onClick={() => {
+      <div>
+        <Button
+          className="button-addpet"
+          variant="success"
+          block
+          onClick={() => {
+            this.handlemodal();
+          }}
+        >
+          Add Pet
+        </Button>
+
+        <Modal show={this.state.show} className="warp-modal-pet">
+          <Modal.Header>
+            <h2 className="header-modal">Premium</h2>
+          </Modal.Header>
+
+          <Modal.Body>
+            <Form>
+              <Form.Group className="premium">
+                <h5>
+                  Upgrade breeder mu dan nikmati <br /> fitur - fitur PRO{" "}
+                </h5>
+
+                <h5>Breeder : 0899988871 </h5>
+              </Form.Group>
+
+              <Form.Group>
+                <Form.Control
+                  type="email"
+                  placeholder="No.Rek Kamu"
+                  column
+                  sm="2"
+                />
+
+                <img
+                  type="file"
+                  src={ImportPhoto}
+                  style={{ opacity: "0.5" }}
+                ></img>
+              </Form.Group>
+            </Form>
+          </Modal.Body>
+
+          <Modal.Footer>
+            {/* <Link to="/Premium"> */}
+            <Button variant="success" block>
+              Submit
+            </Button>
+            {/* </Link> */}
+
+            <Button
+              variant="outline-success"
+              block
+              onClick={() => {
                 this.handlemodal();
-              }}>
-                      Add Pet
-</Button>
-
-<Modal show={this.state.show} className="warp-modal-pet" >
-              <Modal.Header ><h2  className="header-modal">Premium</h2></Modal.Header>
-
-              <Modal.Body >
-                <Form>
-                  <Form.Group className="premium" >
-                    <h5>Upgrade breeder mu dan nikmati <br/> fitur - fitur PRO </h5>
-                
-
-                  
-                    <h5>Breeder : 0899988871 </h5> 
-                  
-                    </Form.Group>
-
-                  <Form.Group >
-                  <Form.Control type="email" placeholder="No.Rek Kamu" column sm="2"/>
-                 
-                    <img type="file" src={ImportPhoto} style={{"opacity":"0.5"}}></img>
-                  </Form.Group>
-
-                
-                  
-               
-                
-                </Form>
-              </Modal.Body>
-             
-              <Modal.Footer>
-              <Link to="/Premium">
-              <Button variant="success"  className="btn-block"  >
-                  Submit
-                </Button>
-                </Link>
-                
-
-                <Button variant="outline-success"  block 
-                  onClick={() => {
-                    this.handlemodal();
-                  }}
-                >
-                  CLOSE
-                </Button>
-              </Modal.Footer>
-            </Modal>
-</div>
-
-);
-}
+              }}
+            >
+              CLOSE
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </div>
+    );
+  }
 }
 
 export default Addpet;

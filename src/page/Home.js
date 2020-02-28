@@ -1,18 +1,16 @@
-import React, { Component, Fragment } from "react";
-import forground from "../image/forground.png";
+import React, { Component } from "react";
+
 import pic from "../image/profile.jpg";
 import love from "../image/love.png";
 import star from "../image/star.png";
 import other from "../image/other.png";
 import not from "../image/not.png";
 
-import { Button, Nav, Col, Row, Container, Image } from "react-bootstrap";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Col, Row, Container, Image } from "react-bootstrap";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import "../Application.css";
 import Match from "./Match";
 import Deck from "./Deck";
-
-import Profile from "./Profile";
 
 class Home extends Component {
   render() {
@@ -25,7 +23,7 @@ class Home extends Component {
                 <Image src={pic} roundedCircle className="pp" />
               </Link>
               &nbsp; &nbsp;<h3>Ricardo Milos</h3>
-              <hr style={{" border-top": "5px solid red"}}/>
+              <hr style={{ " border-top": "5px solid red" }} />
             </Row>
             <Row className="match-list">
               <Col>
@@ -47,24 +45,23 @@ class Home extends Component {
             </Row>
           </Col>
           <div>
-            <Col sm={8} className="body-kanan" style={{
-                    "max-height": "calc(220vh - 220px)",
-                    "overflow-y": "auto",
-                    "overflow":"hidden",
-                  }}>
-              <div id="swipe" >
-                  
+            <Col
+              sm={8}
+              className="body-kanan"
+              style={{
+                "max-height": "calc(220vh - 220px)",
+                "overflow-y": "auto",
+                overflow: "hidden"
+              }}
+            >
+              <div id="swipe">
                 <Deck />
-             <div className="button-tinder" >
-          
-             <Image src={other}></Image>
-               <Image src={not}></Image>
-               <Image src={love}></Image>
-               <Image src={star}></Image>
-               
-           
-             </div>
-             
+                <div className="button-tinder">
+                  <Image src={other}></Image>
+                  <Image src={not}></Image>
+                  <Image src={love}></Image>
+                  <Image src={star}></Image>
+                </div>
               </div>
             </Col>
           </div>
