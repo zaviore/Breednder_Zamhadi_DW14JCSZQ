@@ -1,22 +1,54 @@
-import { GET_AUTH } from "../Config/constants";
+import { GET_AUTH, GET_LOGIN, REGISTRASI } from "../Config/constants";
 
-import { API } from "../Config/api";
+import { API, setAuthToken } from "../Config/api";
 
-export const getLogin = data => {
-  console.log("actionnn data", data);
+export const register = data => {
   return {
-    type: GET_AUTH,
+    type: REGISTRASI,
     payload: async () => {
-      const res = await API.post("/login", data);
-      if (res.data.token !== undefined) {
-        const token = `Bearer ${res.data.token}`;
-        localStorage.setItem("jwToken", token);
-        API.defaults.headers.common["autorization"] = token;
+      const res = await API.post("/register", data);
 
-        return res.data;
-      } else {
-        return res.data;
-      }
+      localStorage.setItem("token", res.data.token);
+      localStorage.setItem("email", res.data.email);
+
+      return res.data;
     }
   };
 };
+
+export const getLogin = data => {
+  return {
+    type: GET_LOGIN,
+    payload: async () => {
+      const res = await API.post("/login", data);
+      localStorage.setItem("token", res.data.token);
+      localStorage.setItem("email", res.data.email);
+
+      return res.data;
+    }
+  };
+};
+
+// export const getAuth = () => {
+//   const token = localStorage.getItem("token");
+//   if (token) {
+//     //// cek token from server
+
+//     return {
+//       type: GET_AUTH,
+//       payload: async () => {
+//         setAuthToken(token);
+//         const res = await API.get("/autoauth");
+
+//         return res.data.data;
+//       }
+//     };
+//   } else {
+//     ////redirect to login page
+
+//     return {
+//       type: "LOGOUT",
+//       payload: {}
+//     };
+//   }
+// };

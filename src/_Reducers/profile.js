@@ -1,38 +1,34 @@
-import { POST_REGIS } from "../Config/constants";
+import { GET_USER } from "../Config/constants";
 
 // Setup Reducer for Redux
 const initialState = {
   data: [],
   loading: false,
-  error: false,
-  isRegis: false
+  error: false
 };
 
-const regis = (state = initialState, action) => {
+const profile = (state = initialState, action) => {
   switch (action.type) {
-    case `${POST_REGIS}_PENDING`:
+    case `${GET_USER}_PENDING`:
       return {
         ...state,
         loading: true
       };
-    case `${POST_REGIS}_FULFILLED`:
+    case `${GET_USER}_FULFILLED`:
       return {
         ...state,
         data: action.payload,
-        loading: false,
-        isRegis: true
+        loading: false
       };
-    case `${POST_REGIS}_REJECTED`:
+    case `${GET_USER}_REJECTED`:
       return {
         ...state,
         loading: false,
-        isRegis: false,
         error: true
       };
-
     default:
       return state;
   }
 };
 
-export default regis;
+export default profile;

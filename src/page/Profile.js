@@ -2,19 +2,27 @@ import React, { Component } from "react";
 import pic from "../image/profile.jpg";
 import back from "../image/back.png";
 import Addpet from "./Addpet";
-import { MdLocationOn } from "react-icons/md";
-import { FaRegUser } from "react-icons/fa";
-import { FaTransgender } from "react-icons/fa";
-import { MdPhoneAndroid } from "react-icons/md";
+import { MdLocationOn, MdPhoneAndroid } from "react-icons/md";
+import { FaRegUser, FaTransgender } from "react-icons/fa";
 
 import { Button, Card, Col, Row, Container, Image } from "react-bootstrap";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import "../Application.css";
+import { connect } from "react-redux";
+import { getUser } from "../_Actions/profile";
 
 import DataProfile from "./DataProfile";
 // -------------------------------------- profile utama ----------------------------------------
-class Home extends Component {
+class Profile extends Component {
+  componentDidMount() {
+    this.props.getUser();
+  }
+
   render() {
+    const { data, loading, error } = this.props.profile;
+    if (loading || !data) {
+      return <h1>now loading</h1>;
+    }
     return (
       <Container fluid>
         <Row className="container-1">
@@ -58,9 +66,8 @@ class Home extends Component {
                     </Card.Title>
                     <Card.Text>
                       <Container className="text">
-                        <FaRegUser /> Breeder Profil : zamhadi
+                        <FaRegUser /> Breeder Profil : {data.breeder}
                       </Container>
-
                       <Container className="text">
                         <MdLocationOn /> 10 kilometer dari sini
                       </Container>
@@ -71,19 +78,13 @@ class Home extends Component {
                       </Container>
 
                       <Container className="text">
-                        <MdPhoneAndroid /> Phone Breeder : 08999823823332
+                        <MdPhoneAndroid /> Phone Breeder : {data.phone}
                       </Container>
 
                       <Card.Title className="titles">
                         <h3>About</h3>
                       </Card.Title>
-                      <Container className="text">
-                        lorem isum sadas;jadasdasdsad aa dsaa sdadadsasd
-                        asdasdasdasda sdadasdasd asdadsadsads adasdadadas adasd
-                        asd sad asd asdad asd asd ad asd sad asd
-                        alsndlhkjsakjkiasdjioadnkh n 'ankjfjoaw
-                        askadkobf;jioadja a kpojhflk a kj;jlj;adadjl;adjlad[kfa
-                      </Container>
+                      <Container className="text">{data.about}</Container>
                     </Card.Text>
                     <hr></hr>
                     <Link to="/Edit">
@@ -106,4 +107,17 @@ class Home extends Component {
   }
 }
 
-export default Home;
+const mapStateToProps = state => {
+  return {
+    profile: state.profile
+    // auth: state.auth
+  };
+};
+
+const mapDispatchToProps = dispacth => {
+  return {
+    getUser: () => dispacth(getUser())
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Profile);

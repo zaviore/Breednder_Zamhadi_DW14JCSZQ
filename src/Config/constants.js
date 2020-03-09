@@ -10,4 +10,6 @@ export const PUT_SPECIES = "PUT_SPECIES";
 
 //auth
 export const GET_AUTH = "GET_AUTH";
-export const POST_REGIS = "POST_REGIS";
+export const GET_LOGIN = "GET_LOGIN";
+export const REGISTRASI = "REGISTRASI";
+export const GET_USER = "GET_USER";

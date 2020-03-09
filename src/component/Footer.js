@@ -1,18 +1,13 @@
 import React, { Component } from "react";
+import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-
-import "../App.css";
-
-class footer extends Component {
+class Footer extends Component {
   render() {
     return (
-      <div className="footer ">
-        {/* <h3 className="textfooter " style={{bottom: "5px"}}>FIND YOUR PET'S MATCH</h3>
-         */}
-      </div>
+      <Navbar className="footer" style={{ backgroundColor: "#6E4F33" }}>
+        <Navbar.Brand href="#home"></Navbar.Brand>
+      </Navbar>
     );
   }
 }
-
-export default footer;
+export default Footer;

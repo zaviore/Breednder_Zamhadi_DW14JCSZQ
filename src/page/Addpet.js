@@ -58,6 +58,7 @@ class Addpet extends Component {
 
                 <img
                   type="file"
+                  class="form-control-file"
                   src={ImportPhoto}
                   style={{ opacity: "0.5" }}
                 ></img>

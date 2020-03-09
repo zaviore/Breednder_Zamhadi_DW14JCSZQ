@@ -13,10 +13,10 @@
 }
 .imglanding {
   /* The image used */
-  background-image: url("owl.png");
- background-position: center;
+  background-image: url("./image/landing.png");
+  background-position: center;
   /* Full height */
-  height: 100%;
+  height: 100vh;
   /* Center and scale the image nicely */
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,65 +56,60 @@
 .App-link {
   color: #61dafb;
 }
-.home{
-  color: white;
+.home {
+  color: rgb(71, 71, 71);
 }
-.home  img{
+.home img {
   width: 50px;
   height: 50px;
 }
 
 .warp-modal {
-
   margin: auto;
   margin-top: 100px;
   max-height: 100vh;
-  
+
   overflow-y: auto;
 }
 
-
 .warp-modal-pet {
-
   margin: auto;
   margin-left: 230px;
   max-height: 100vh;
   overflow-y: auto;
 }
 
-
 .warp-modal-pet h2 {
-font-weight: bold;
-padding: 10px;
-
+  font-weight: bold;
+  padding: 10px;
 }
-.modal-title{
+.modal-title {
   height: -100px;
 }
-.header-modal{
+.header-modal {
   text-align: center;
   justify-content: center;
   margin: auto;
 }
 
-.display-1{
-
+.display-1 {
+  font-size: 80px !important;
+  color: rgb(71, 71, 71);
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: rgb(71, 71, 71);
 }
-
-.overflow-body{
+.titlelanding2 {
+  color: rgb(71, 71, 71);
+}
+.overflow-body {
   width: 500px !important;
   overflow: auto !important;
-
 }
 
-
-
-#rounded-button{
-border: none;
-border-radius: 10px;
-width:200px;
+#rounded-button {
+  background-color: #c4996c;
+  border: none;
+  border-radius: 10px;
+  width: 150px;
 }
 @keyframes App-logo-spin {
   from {

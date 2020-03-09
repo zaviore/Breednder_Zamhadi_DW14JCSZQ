@@ -36,28 +36,27 @@ class Header extends Component {
 
   render() {
     const { isLogin, loading } = this.props.login;
+
     return isLogin ? (
       // <Route>
       <Redirect to={{ pathname: "/Home" }} />
     ) : (
       // </Route>
-      <Navbar>
+      <Navbar style={{ height: "50px" }}>
         <Navbar.Brand href="/">
-          <h4 className="home">
-            <img src={logo}></img> Owlinder
-          </h4>
+          <h4 className="home">Doglinder</h4>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
             <Button
-              variant="success"
+              variant=""
               onClick={() => {
                 this.handlemodal();
               }}
             >
-              LOGIN
-            </Button>{" "}
+              <b>LOGIN</b>
+            </Button>
             <Modal show={this.state.show} className="warp-modal ">
               <Modal.Header>
                 <h1 className="header-modal">LOGIN</h1>
@@ -125,7 +124,7 @@ class Header extends Component {
 }
 const mapStateToProps = state => {
   return {
-    login: state.login
+    login: state.auth
     // auth: state.auth
   };
 };

@@ -2,16 +2,16 @@ import { createStore, combineReducers, applyMiddleware } from "redux";
 
 // import articles from "../_reducers/article";
 import species from "../_Reducers/species";
-import login from "../_Reducers/auth";
-import regis from "../_Reducers/regis";
+import profile from "../_Reducers/profile";
+import auth from "../_Reducers/auth";
 
 import { logger, promise } from "../Middleware";
 
 // Global state
 const rootReducers = combineReducers({
   species,
-  login,
-  regis
+  auth,
+  profile
 });
 
 // Setup store for Redux
